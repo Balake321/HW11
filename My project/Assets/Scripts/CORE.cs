@@ -23,13 +23,11 @@ public class CORE : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 10; i++)
         {
-
-            Transform t = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
-            Rigidbody rb = t.GetComponent<Rigidbody>();
-            rb.velocity = new Vector3(Random.Range(10, 30), Random.Range(0, 20), Random.Range(10, 30));
+            print(Random.Range(1, 10));
         }
+        Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
     }
 
     // Update is called once per frame
